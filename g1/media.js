@@ -34,13 +34,13 @@
 //    window.location.href = "index.html";
 //}
 
-모바일을 통한 사이트 접속 체크2
-var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
-if (mobile) {
-    window.location.href = "mobile.html";
-} else {
-    window.location.href = "index.html";
-}
+//모바일을 통한 사이트 접속 체크2
+//var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
+//if (mobile) {
+//    window.location.href = "mobile.html";
+//} else {
+//    window.location.href = "index.html";
+//}
 
 //브라우저의 접속 종류 체크
 //var browser = navigator.userAgent.toLowerCase();

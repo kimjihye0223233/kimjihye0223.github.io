@@ -46,15 +46,15 @@
         .topNav {float: right; position: relative; right:50px; top: 0;}
         .topNav li {float: left; padding: 0 10px; margin: 0;  }
         .topNav a{font-size: 14px; font-weight: 600;}
-        .topBar { display: block; width: 1200px; height: 50px; position: relative; }
-        .topBinner {position: relative; width: 1200px; top: 30px; background: #4761a1; padding-top: 20px;}
+        .topBar { display: block; width: 1200px; height: 50px; position: relative;}
+        .topBinner {position: relative; width: 1200px; padding-top: 30px; background: #4761a1; margin-top: 20px;}
         .dlogo { display: block; position: relative; margin-bottom: 40px; line-height:40px;left: 50px; bottom: 35px; width: 147px; height: 25px;}
         .search { clear: both; width: 400px; height: 45px; display: block; margin: 0 auto; border: 2px solid #4761a1; box-sizing: border-box;}
         #searchForm {display: inline-block; font-size: 14px; float: left; padding: 12px;}
         #searchBtn { display: inline-block; width: 26px; height: 25px; background: url("./img/icon_set_common.png"); background-position: -38px -103px;  background-repeat: no-repeat; float: right; margin: 7px 5px 5px 7px; position: absolute; right: 400px; cursor: pointer;}
     </style>
     <style>
-        .Wrap {width: 1200px; height: 1050px; margin: 0 auto;}
+        .Wrap {width: 1200px; height: 750px; margin: 0 auto;}
         #snb {width: 200px; height: 100%; position: relative; top: 0px; float: left; padding: 0 35px; 30px; 100px;}
         #snb h2 {text-align: center; padding-bottom: 20px; border-bottom: 2px solid #666; font-weight: 600;}
         .snbMenu {margin-top: 30px; display: block; min-height: 500px; overflow-y: visible;}
@@ -67,7 +67,6 @@
         .snbMenu input[type=radio]:checked ~ .snbDetail.menu2 {height: 100px; margin-top: 10px; text-indent: 10px; background: #f0f3fd; padding: 10px 0 10px 0; }
         .snbMenu input[type=radio]:checked ~ .snbDetail.menu3 {height: 120px; margin-top: 10px; text-indent: 10px; background: #f0f3fd; padding: 10px 0 10px 0; }
         .snbMenu input[type=radio]:checked ~ .snbDetail.menu4 {height: 80px; margin-top: 10px; text-indent: 10px; background: #f0f3fd; padding: 10px 0 10px 0; }
-        .snbMenu input[type=radio]:checked ~ .snbDetail.menu5 {height: 100px; margin-top: 10px; text-indent: 10px; background: #f0f3fd; padding: 10px 0 10px 0; }
         .snbDetail {margin-bottom: 20px;}
         .snbDetail li a{ color: #333; font-size: 14px;}
         .snbDetail li:hover a{color: #4761a1;}
@@ -82,19 +81,30 @@
         .print { display: block; float: right; background: url("./img/icon_set_common.png") no-repeat; width: 30px; height: 30px; background-position: -0px -200px; border: 1px solid #999; padding: 5px 5px 2px 2px; text-indent: -9999px; margin-top:-50px; margin-right: 30px;
         }
         .colrow {margin: 0px 20px; }
-        .colBox {height: 200px; width: 205px;  float: left; border: 1px solid #ddd;  padding: 25px; margin: 0 25px 25px 0;}
-        .colTit {font-weight: 500; margin-bottom: 10px; font-size: 18px;}
+        .colBox.item1, .colBox.item3 {height: 200px; width: 205px;  float: left; border: 1px solid #ddd;  padding: 25px; margin: 0 25px 25px 0;}
+        .colBox.item2{height: 200px; width: 500px;  float: left; border: 1px solid #ddd;  padding: 25px; margin: 0 25px 25px 0;}
+        .citizen {display: block; position: relative; float: right; bottom: 20px; font-size: 12px;}
+        .compl {text-decoration: underline; text-decoration-color: cornflowerblue;}
+        .freed {padding: 0px 40px 0px 40px;}
+        .plus {border: 1px solid #333; padding:0 6px 0 6px;}
+        .colBox.item2 ul {margin-top: 25px;}
+        
+        .colBox.item4 
+        .colTit {font-weight: 500; margin-bottom: 10px; font-size: 18px; color: #333;}
         .colBox li a {display: block; font-size: 14px; line-height: 24px; color: #333;}
+        .colBox a {color: #333;}
         .colBox span { background: url("./img/link.png") no-repeat; display: inline-block; width: 5px; height: 9px; text-indent: -9999px; vertical-align: middle; margin: 0 10px; }
-        .colBox.item1 {background: url("./img/intro1.png"); background-repeat: no-repeat; background-size: 260px 192px; background-position: center bottom; }
-        .colBox.item2 {background: url("./img/intro2.png"); background-repeat: no-repeat; background-size: 271px 169px; background-position: center bottom; }
-        .colBox.item3 {background: url("./img/intro3.png"); background-repeat: no-repeat; background-size: 80px 180px; background-position: right bottom; }
-        .daeguBox {width: 630px; height: 250px; text-align: center; margin: 0 auto; display: block; clear: both; margin-bottom: 50px;}
-        .colBox .subLink {display: block; line-height: 24px; color: #333;}
-        .colBox .subLink .colCom {font-size: 14px;}
-        .colBox.item4 {background: url("./img/intro4.jpg"); background-repeat: no-repeat; background-size: 250px 130px; background-position: right bottom; cursor: pointer;}
-        .colBox.item5 {background: url("./img/intro5.jpg"); background-repeat: no-repeat; background-size: 271px 294px; background-position: center bottom; cursor: pointer;}
-        .colBox.item6 {background: url("./img/intro6.jpg"); background-repeat: no-repeat; background-size: 271px 294px; background-position: center bottom; cursor: pointer;}
+        .colBox.item1 {background: url("./img/img_citizen1.png"); background-repeat: no-repeat; background-size: 147px 128px; background-position: center bottom; }
+        .colBox.item3 {background: url("./img/img_citizen2.png"); background-repeat: no-repeat; background-size: 96px 110px; background-position: center bottom; }
+        
+        .colinBox {height: 80px; width: 230px;  float: left; border: 1px solid #ddd;  padding: 20px;  }
+        .colinBox.Box2, .colinBox.Box4 {margin: 0 0 8px 8px;}
+        .colinBox .colTitle {font-weight: 600;}
+        .colBox .colinBox .col {font-size: 12px; }
+        .colinBox.Box1 {background: url("./img/img_citizen3.png"); background-repeat: no-repeat; background-size: 96px 110px; background-position: right bottom; }
+        .colinBox.Box2 {background: url("./img/img_citizen4.png"); background-repeat: no-repeat; background-size: 78px 68px; background-position: right bottom; }
+        .colinBox.Box3 {background: url("./img/img_citizen5.png"); background-repeat: no-repeat; background-size: 81px 62px; background-position: right bottom; }
+        .colinBox.Box4 {background: url("./img/img_citizen6.png"); background-repeat: no-repeat; background-size: 87px 60px; background-position: right bottom; }
     </style>
     <style>
         .ft {width: 1200px; height: 148px; margin: 0 auto; display: block; border-top: 1px solid #eee;}
@@ -149,57 +159,50 @@
     </header>
     <div class="Wrap">
         <nav id="snb">
-            <h2>대구소개</h2>
+            <h2>시민참여</h2>
             <ul class="snbMenu">
                 <li class="snbtitm1">
                    <input type="radio" name="snbdt" id="snbdt1">
-                   <label for="snbdt1" class="snbBtn">시청안내<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
+                   <label for="snbdt1" class="snbBtn">정책토론<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
                     <ul class="snbDetail menu1">
-                        <li><a href="">시청사안내</a></li>
-                        <li><a href="">행정조직도</a></li>
-                        <li><a href="">직원검색</a></li>
-                        <li><a href="">전화번호안내</a></li>
-                        <li><a href="">찾아오시는길</a></li>
+                        <li><a href="">정책포럼</a>
+                        </li>
+                        <li><a href="">전자공청회</a>
+                        </li>
+                        <li><a href="">설문조사</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="snbtitm2">
                   <input type="radio" name="snbdt" id="snbdt2">
-                   <label for="snbdt2" class="snbBtn">대구의 상징<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
+                   <label for="snbdt2" class="snbBtn">시민청원·제안<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
                     <ul class="snbDetail menu2">
-                        <li><a href="">심벌·로고</a></li>
-                        <li><a href="">시조·시목·시화</a></li>
-                        <li><a href="">대구시민의 노래</a></li>
-                        <li><a href="">수달이모티콘</a></li>
+                        <li><a href="">민원신청</a></li>
+                        <li><a href="">제안신청</a></li>
+                        <li><a href="">공직비리신고</a></li>
+                        <li><a href="">120달구벌콜센터</a></li>
                     </ul>
                 </li>
                 <li class="snbtitm3">
                   <input type="radio" name="snbdt" id="snbdt3">
-                   <label for="snbdt3" class="snbBtn">대구의 연혁<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
+                   <label for="snbdt3" class="snbBtn">시민참여<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
                     <ul class="snbDetail menu3">
-                        <li><a href="">역사</a></li>
-                        <li><a href="">연표</a></li>
-                        <li><a href="">지명유래</a></li>
-                        <li><a href="">대구시사</a></li>
-                        <li><a href="">대구자료총서</a></li>
+                        <li><a href="">자유게시판</a></li>
+                        <li><a href="">칭찬합시다</a></li>
+                        <li><a href="">시민생활안전지킴이</a></li>
+                        <li><a href="">시민모니터단</a></li>
+                        <li><a href="">이벤트</a></li>
                     </ul>
                 </li>
                 <li class="snbtitm4">
                   <input type="radio" name="snbdt" id="snbdt4">
-                   <label for="snbdt4" class="snbBtn">대구의 현황<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
+                   <label for="snbdt4" class="snbBtn">복지 및 인권옴브즈만<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
                     <ul class="snbDetail menu4">
-                        <li><a href="">행정구역</a></li>
-                        <li><a href="">시정현황</a></li>
-                        <li><a href="">대구 지도포털</a></li>
-                    </ul>
-                </li>
-                <li class="snbtitm5">
-                  <input type="radio" name="snbdt" id="snbdt5">
-                   <label for="snbdt5" class="snbBtn">스토리인대구<img src="./img/snbdrop.png" alt="" class="snbdrop"></label>
-                    <ul class="snbDetail menu5">
-                        <li><a href="">대구스토리텔링</a></li>
-                        <li><a href="">대구인포그래픽</a></li>
-                        <li><a href="">도시브랜드웹툰</a></li>
-                        <li><a href="">도시브랜드동영상</a></li>
+                        <li><a href="">소개</a></li>
+                        <li><a href="">이용안내</a></li>
+                        <li><a href="">고충민원접수</a></li>
+                        <li><a href="">운영보고서</a></li>
+                        <li><a href="">민원사례</a></li>
                     </ul>
                 </li>
             </ul>
@@ -207,8 +210,8 @@
         <div class="contents">
             <div class="topCon">
                <div class="topTit">
-                <h2>대구소개</h2>
-                <p class="bread">HOME <span>></span>대구소개</p>
+                <h2>시민참여</h2>
+                <p class="bread">HOME <span>></span>시민참여</p>
                 </div>
                 <div class="print">
                     <a href="">print</a>
@@ -216,53 +219,68 @@
             </div>
             <div class="colrow">
             <div class="colBox item1">
-                <h3 class="colTit">본청안내</h3>
-                <ul>
-                    <li><a href="">본청 조직안내<span>></span></a></li>
-                    <li><a href="">찾아오시는 길<span>></span></a></li>
-                </ul>
+               <a href="">
+                <h3 class="colTit">정책토론회</h3>
+                <p class="col">시민의 의견을 듣고<br>정책에 반영합니다.</p>              
+                </a>
             </div>
             <div class="colBox item2">
-                <h3 class="colTit">상징</h3>
+                <h3 class="colTit">시민게시판</h3>
+                <h5 class="citizen">
+                <a href="" class="compl">칭찬합시다</a>
+                <a href="" class="freed">자유게시판</a>
+                <a href="" class="plus">&#43;</a>
+                </h5>
                 <ul>
-                    <li><a href="">심벌·로고<span>></span></a></li>
-                    <li><a href="">시조·시목·시화<span>></span></a></li>
+                    <li><a href="">칭찬합니다 이용안내</a></li>
+                    <li><a href="">315번 김기태 버스기사님 칭찬합니다.</a></li>
+                    <li><a href="">대구광역시 (달서구) 김민정 소방관님을 칭찬합니다.</a></li>
+                    <li><a href="">중구 복지관 여경희 복지사님을 칭찬드립니다.</a></li>
+                    <li><a href="">대구교통 김지원 택시기사님 칭찬합니다.</a></li>
                 </ul>
             </div>
-            <div class="colBox item3">
-                <h3 class="colTit">스토리인대구</h3>
-                <ul>
-                    <li><a href="">대구스토리텔링<span>></span></a></li>
-                    <li><a href="">대구인포그래픽<span>></span></a></li>
-                    <li><a href="">도시브랜드웹툰<span>></span></a></li>
-                    <li><a href="">도시브랜드동영상<span>></span></a></li>
-                </ul>
-            </div>
-            </div>
-            <div class="daeguBox">
-                <img src="./img/daeguimg.png" alt="">
             </div>
             <div class="colrow">
+            <div class="colBox item3">
+                <h3 class="colTit">커뮤니티</h3>
+                <ul>
+                    <li><a href="">대구 NGO 협력센터<span>></span></a></li>
+                    <li><a href="">대구 어린이 모니터단<span>></span></a></li>
+                    <li><a href="">대구 대학생 홍보단<span>></span></a></li>
+                </ul>
+            </div>
             <div class="colBox item4">
-                <a href="" class="subLink">
-                <h3 class="colTit">열린시장실</h3>
-                <p class="colCom">시민과 소통하는</p>
-                </a>
-            </div>
-            <div class="colBox item5">
-                <a href="" class="subLink">
-                <h3 class="colTit">역대대구시장</h3>
-                </a>
-            </div>
-            <div class="colBox item6">
-                <a href="" class="subLink"><h3 class="colTit">대구의 역사</h3>
-                <p class="colCom">살아숨쉬는<br>대구의 역사가 펼쳐집니다.</p>
-                </a>
+               <ul>
+                   <li class="colinBox Box1">
+                       <a href="">
+                           <h4 class="colTitle">민주주의 대구</h4>
+                           <p class="col">더 나은 일상을 시민과 함께</p>
+                       </a>
+                   </li>
+                   <li class="colinBox Box2">
+                       <a href="">
+                           <h4 class="colTitle">참여예산·예산낭비신고</h4>
+                           <p class="col">투명성과 공정성 제고</p>
+                       </a>
+                   </li>
+                   <li class="colinBox Box3">
+                       <a href="">
+                           <h3 class="colTitle">대구사랑 커뮤니티</h3>
+                           <p class="col">함께하는 대구사랑</p>
+                       </a>
+                   </li>
+                   <li class="colinBox Box4">
+                       <a href="">
+                           <h3 class="colTitle">대구 자원봉사센터</h3>
+                           <p class="col">대구 자원봉사센터</p>
+                       </a>
+                   </li>
+               </ul>
             </div>
             </div>
         </div>
     </div>
-   <footer class="ft">
+    <footer class="ft">
         <div class="ftTop">
             <ul class="ftsitemap">
                 <li><a href="">홈페이지 도우미</a></li>
