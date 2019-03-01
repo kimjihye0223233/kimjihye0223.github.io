@@ -1,14 +1,14 @@
 $(document).ready(function(){
     var intv = setInterval(function() { nextAni(); }, 2400);
     function nextAni() {
-        $(".banSd").not(":animated").animate({"margin-left":"-355px"}, 500, function(){
+        $(".banSd").not(":animated").animate({"margin-left":"-375px"}, 500, function(){
             $(".banSd li").eq(0).appendTo($(".banSd"));
             $(".banSd").css("margin-left", "0px");
         });
     }
     function prevAni(){
         $(".banSd li").eq(5).prependTo($(".banSd"));
-        $(".banSd").css("margin-left", "355px");
+        $(".banSd").css("margin-left", "375px");
         $(".banSd").not(":animated").animate({"margin-left":"0px"}, 500);
     }
     $(".nBtn").click(function(){

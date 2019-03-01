@@ -11,12 +11,12 @@ $(document).ready(function(){
         $(".slidevs1").css("margin-left", "-760px");
         $(".slidevs1").not(":animated").animate({"margin-left":"0px"}, 800);
     }
-    $(".nextBtn").click(function(){
+    $(".nextFr").click(function(){
         clearInterval(intv);
         nextAni();
         intv = setInterval(function() { nextAni(); }, 2800);
     });
-    $(".prevBtn").click(function(){
+    $(".prevFr").click(function(){
         clearInterval(intv);
         prevAni();
         intv = setInterval(function() { nextAni(); }, 2800);
